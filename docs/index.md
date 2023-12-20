@@ -1,4 +1,18 @@
 # 応用センサーキットの使い方<br>（Applied Sensor Kits）
+## 目次
+- [単体で動作確認できるセンサー](#単体で動作確認できるセンサー)
+- [人感センサーの使い方](#人感センサーの使い方)
+- [Neopixcel LED の使い方](#Neopixcel-LED-の使い方)
+- [アナログセンサーの使い方](#アナログセンサーの使い方)
+  - [アナログボリュームの回路図（半固定抵抗利用）](#アナログボリュームの回路図半固定抵抗利用)
+  - [水位センサーの回路図](#水位センサーの回路図)
+- [アクチュエーター（サーボモーター）の使い方](#アクチュエーターサーボモーターの使い方)
+  - [PiZero から給電する回路図](#PiZero-から給電する回路図)
+  - [モバイルバッテリーの利用方法](#モバイルバッテリーの利用方法)
+- [アクチュエーター（DCモーター）の使い方](#アクチュエーターDCモーターの使い方)
+  - [hbridge1 の回路図（MX1508利用）](#hbridge1-の回路図MX1508利用)
+  - [hbridge2-pca9685pwm の回路図（MX1508利用）](#hbridge2-pca9685pwm-の回路図MX1508利用)
+
 ## 応用センサーキットの一覧
 
 <img src="./imgs/AppliedSensorKits.png" width=800>
@@ -79,7 +93,7 @@
 
 ### 回路図とプログラムサンプル
 
-#### アナログボリュームの回路図（半固定抵抗利用）
+## アナログボリュームの回路図（半固定抵抗利用）
 <img src="./imgs/analog_jig.png" width=450>
 
 - アナログセンサーの利用は ADS1115 を使います。回路図にあるつまみは半固定抵抗 10KΩ を使用します。
@@ -88,7 +102,7 @@
   - 電力変化量から必要な値を求められるようにするのは、プログラムでの計算が必要です。
 <div style="page-break-before:always"></div>
 
-#### 水位センサーの回路図
+## 水位センサーの回路図
 <img src="./imgs/analog_water.png" width=500>
 
 - 水位センサ、土壌湿度センサもアナログセンサーです。ADS1115 を併用して使います。
@@ -108,12 +122,13 @@
 - 給電方法は電池ボックス又は USB DIP 化キットを使ったモバイルバッテリーの使用、電源モジュールを使った ACアダプタ給電など
 <div style="page-break-before:always"></div>
 
-### PiZero から給電する回路図
+## PiZero から給電する回路図
 
 <img src="./imgs/pca9685_sg90_nodc.png" width=300>
 
 - 低消費電力のモーター（例：SG-90）1個の場合、RasPi Zero からの電力供給でも動作させられるものもあります。
-### モバイルバッテリーの利用方法
+
+## モバイルバッテリーの利用方法
 
 <img src="./imgs/mobilebattery.jpg" width=400>
 
@@ -128,7 +143,7 @@
 - モーターを動かすため外部から電力を取る必要があります。
 
 ### 回路図とプログラムサンプル
-#### hbridge1 の回路図（MX1508利用）
+## hbridge1 の回路図（MX1508利用）
 <img src="./imgs/MX1508_DCmotor.png" width=450>
 
 - [PiZero サンプルコード](https://tutorial.chirimen.org/pizero/esm-examples/hbridge1/main.js)
@@ -136,7 +151,7 @@
   - モーターの動作にジャンパーワイヤーを巻き込まない様に動作前に接続状況を注意してください。
 <div style="page-break-before:always"></div>
 
-#### hbridge2-pca9685pwm の回路図（MX1508利用）
+## hbridge2-pca9685pwm の回路図（MX1508利用）
 <img src="./imgs/MX1508_PWM_DCmotor.png" width=500>
 
 - [PiZero サンプルコード](https://tutorial.chirimen.org/pizero/esm-examples/hbridge2-pca9685pwm/main.js)
