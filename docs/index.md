@@ -1,17 +1,19 @@
-# 応用センサーキットの使い方（Applied Sensor Kits）
+# 応用センサーキットの使い方<br>（Applied Sensor Kits）
 ## 目次
-- [応用センサーキットの一覧](#応用センサーキットの一覧)
 - [単体で動作確認できるセンサー](#単体で動作確認できるセンサー)
 - [人感センサーの使い方](#人感センサーの使い方)
-- [Neopixcel LED の使い方](#Neopixcel_LED_の使い方)
-- # アナログセンサーの使い方
-- # アクチュエーター（サーボモーター）の使い方
-  - #### PiZero から給電する回路図
-  - ### モバイルバッテリーの利用方法
-- # アクチュエーター（DCモーター）の使い方
-  - #### hbridge1 の回路図（MX1508利用）
-  - #### hbridge2-pca9685pwm の回路図（MX1508利用）
+- [Neopixcel LED の使い方](#Neopixcel-LED-の使い方)
+- [アナログセンサーの使い方](#アナログセンサーの使い方)
+- [アクチュエーター（サーボモーター）の使い方](#アクチュエーターサーボモーターの使い方)
+  - [PiZero から給電する回路図](#PiZero-から給電する回路図)
+  - [モバイルバッテリーの利用方法](#モバイルバッテリーの利用方法)
+- [アクチュエーター（DCモーター）の使い方](#アクチュエーターDCモーターの使い方)
+  - [hbridge1 の回路図（MX1508利用）](#hbridge1-の回路図MX1508利用)
+  - [hbridge2-pca9685pwm の回路図（MX1508利用）](#hbridge2-pca9685pwm-の回路図MX1508利用)
+ 
+
 ## 応用センサーキットの一覧
+
 <img src="./imgs/AppliedSensorKits.png" width=800>
 
 - 応用センサーキットはハッカソン等のアイディアを実装する際に使い勝手の良いセンサーを集めたキットです。
@@ -20,6 +22,7 @@
 <div style="page-break-before:always"></div>
 
 # 単体で動作確認できるセンサー
+
 <img src="./imgs/I2Csensor.png" width=800>
 
 - I2C Examples より回路図とサンプルコードを使って試すことが出来ます。
@@ -27,6 +30,7 @@
   - 上記のセンサーはそれぞれ単体で使う事が出来ます。
 
 ### 回路図とプログラムサンプル
+
 <img src="./imgs/Vl53l0x.png" width=300> <img src="./imgs/Vl53l0x2.png" width=150>
 
 - [PiZero サンプルコード](https://tutorial.chirimen.org/pizero/esm-examples/vl53l0x/main.js)
@@ -50,7 +54,9 @@
 - センサーに感度と保持時間を調整するつまみがあるので調節してテストしてください。
 - 人感センサーは広範囲でセンサーが反応しますので、使用者の意図と異なり反応しやすいのでなるべくセンサーから離れて動作確認するようにしてください。
 - 動作確認をする際には保持時間を最短にすると調整しやすくなります。
+
 ### 回路図とプログラムサンプル
+
 <img src="./imgs/pir_sensor.png" width=400>
 
 - [PiZero サンプルコード（gpio-onchange と同じ）](https://tutorial.chirimen.org/pizero/esm-examples/gpio-onchange/main.js)
@@ -61,11 +67,14 @@
 <div style="page-break-before:always"></div>
 
 # Neopixcel LED の使い方
+
 <img src="./imgs/NeopixcelLEDset.png" width=400>
 
 - Neopixcel LED というフルカラーLED の使い方です。こちらの LED はチュートリアルの LED と異なり、プログラムで複数の LED の点灯の制御や色を変えたりすることが出来ます。
 - 接続には Neopixcel I2C Driver というオープンハードウェアを利用しています。このドライバーボードは市販品ではありません。
+
 ### 回路図とプログラムサンプル
+
 <img src="./imgs/NeopixcelLED.png" width=600>
 
 - 専用コントローラーボード Neopixcel I2C Driver を使った接続をすると簡単に使う事が出来ます。
@@ -74,12 +83,15 @@
 <div style="page-break-before:always"></div>
 
 # アナログセンサーの使い方
+
 <img src="./imgs/analog_sensor.png" width=400>
 <img src="./imgs/water_soil.png" width=300>
 
 - アナログセンサーを利用する時には ADC（アナログデジタルコンバーター）を利用して値を取得して使います。
 - 応用センサーキットでは半固定抵抗（つまみの代わり）を利用したアナログ値の変更の確認をするサンプルと、水位センサー・土壌湿度センサーがキットに含まれています。
+
 ### 回路図とプログラムサンプル
+
 #### アナログボリュームの回路図（半固定抵抗利用）
 <img src="./imgs/analog_jig.png" width=450>
 
@@ -109,7 +121,8 @@
 - 給電方法は電池ボックス又は USB DIP 化キットを使ったモバイルバッテリーの使用、電源モジュールを使った ACアダプタ給電など
 <div style="page-break-before:always"></div>
 
-#### PiZero から給電する回路図
+### PiZero から給電する回路図
+
 <img src="./imgs/pca9685_sg90_nodc.png" width=300>
 
 - 低消費電力のモーター（例：SG-90）1個の場合、RasPi Zero からの電力供給でも動作させられるものもあります。
