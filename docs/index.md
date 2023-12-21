@@ -172,3 +172,18 @@
 - PWMサーボドライバーと組み合わせた動作の場合は、PWM駆動が可能になります。
 - モーターの回転速度も PWM で制御できるので加速や減速などを行う事も可能です。
 - 電池は USB DIP を使用してモバイルバッテリーに変える事も可能です。
+
+---
+
+# RaspberryPi のカメラに関する注意
+<img src="./imgs/PiZero_camera1.jpg" width=700>
+<img src="./imgs/PiZero_camera2.jpg" width=700>
+- 接続端子・フラットケーブルは壊れやすい
+  - 無理に引っ張らない
+  - 折り曲げない様に注意
+- カメラ接続確認のコマンド
+```
+$ vcgencmd get_camera 
+supported=1 detected=1, libcamera interfaces=0
+```
+※ detected=1 と表示されていたら正しく接続が出来ています。
