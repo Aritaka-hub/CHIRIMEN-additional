@@ -18,7 +18,7 @@
 
 ## 応用センサーキットの一覧
 
-<img src="./imgs/AppliedSensorKits.png" width=800>
+<img src="./imgs/AppliedSensorKits.jpg" width=800>
 
 - 応用センサーキットはハッカソン等のアイディアを実装する際に使い勝手の良いセンサーを集めたキットです。
 - CHIRIMEN チュートリアルで習得したスキルを使って実際に動作させることが出来ます。
@@ -29,7 +29,7 @@
 
 # 単体で動作確認できるセンサー
 
-<img src="./imgs/I2Csensor.png" width=800>
+<img src="./imgs/I2Csensor.jpg" width=800>
 
 - I2C Examples より回路図とサンプルコードを使って試すことが出来ます。
   - 上記のセンサーのカッコ内はセンサーの型番で、Examples の ID と同じ記載になります。
@@ -37,7 +37,7 @@
 
 ### 回路図とプログラムサンプル
 
-<img src="./imgs/Vl53l0x.png" width=450> <img src="./imgs/Vl53l0x2.png" width=200>
+<img src="./imgs/Vl53l0x.jpg" width=450> <img src="./imgs/Vl53l0x2.jpg" width=200>
 
 - [PiZero サンプルコード](https://tutorial.chirimen.org/pizero/esm-examples/vl53l0x/main.js)
 - 回路図と実物のセンサーは製品によって形状が異なる場合があります。実際の応用センサーキットに入っている距離センサーは下図の物となります。
@@ -55,7 +55,7 @@
 
 # 人感センサーの使い方
 
-<img src="./imgs/pir_sensor_photo.png" width=300> <img src="./imgs/pir_sensor_use.png" width=400>
+<img src="./imgs/pir_sensor_photo.jpg" width=300> <img src="./imgs/pir_sensor_use.jpg" width=400>
 
 - 人感センサーは半球体の部分から赤外線が発されて人の動きや熱を検知してオンオフするセンサーです。
 - 人感センサーは GPIO センサーとなり、チュートリアルのスイッチと同じ種類のセンサーになります。
@@ -65,7 +65,7 @@
 
 ### 回路図とプログラムサンプル
 
-<img src="./imgs/pir_sensor.png" width=600>
+<img src="./imgs/pir_sensor.jpg" width=600>
 
 - [PiZero サンプルコード（gpio-onchange と同じ）](https://tutorial.chirimen.org/pizero/esm-examples/gpio-onchange/main.js)
 - [（gpio-polling）のサンプルコードも使えます](https://tutorial.chirimen.org/pizero/esm-examples/gpio-polling/main.js)
@@ -78,14 +78,14 @@
 
 # Neopixcel LED の使い方
 
-<img src="./imgs/NeopixcelLEDset.png" width=600>
+<img src="./imgs/NeopixcelLEDset.jpg" width=600>
 
 - Neopixcel LED というフルカラーLED の使い方です。こちらの LED はチュートリアルの LED と異なり、プログラムで複数の LED の点灯の制御や色を変えたりすることが出来ます。
 - 接続には Neopixcel I2C Driver というオープンハードウェアを利用しています。このドライバーボードは市販品ではありません。
 
 ### 回路図とプログラムサンプル
 
-<img src="./imgs/NeopixcelLED.png" width=800>
+<img src="./imgs/NeopixcelLED.jpg" width=800>
 
 - 専用コントローラーボード Neopixcel I2C Driver を使った接続をすると簡単に使う事が出来ます。
 - センサーを使う時には図のように赤色のドライバボードと NeoPixel LED をペアで利用して試してください。
@@ -96,8 +96,8 @@
 
 # アナログセンサーの使い方
 
-<img src="./imgs/analog_sensor.png" width=600>
-<img src="./imgs/water_soil.png" width=400>
+<img src="./imgs/analog_sensor.jpg" width=600>
+<img src="./imgs/water_soil.jpg" width=400>
 
 - アナログセンサーを利用する時には ADC（アナログデジタルコンバーター）を利用して値を取得して使います。
 - 応用センサーキットでは半固定抵抗（つまみの代わり）を利用したアナログ値の変更の確認をするサンプルと、水位センサー・土壌湿度センサーがキットに含まれています。
@@ -105,7 +105,7 @@
 ### 回路図とプログラムサンプル
 
 ## アナログボリュームの回路図（半固定抵抗利用）
-<img src="./imgs/analog_jig.png" width=700>
+<img src="./imgs/analog_jig.jpg" width=700>
 
 - アナログセンサーの利用は ADS1115 を使います。回路図にあるつまみは半固定抵抗 10KΩ を使用します。
 - [PiZero サンプルコード](https://tutorial.chirimen.org/pizero/esm-examples/ads1x15/main.js)
@@ -114,7 +114,7 @@
 <div style="page-break-before:always"></div>
 
 ## 水位センサーの回路図
-<img src="./imgs/analog_water.png" width=700>
+<img src="./imgs/analog_water.jpg" width=700>
 
 - 水位センサ、土壌湿度センサもアナログセンサーです。ADS1115 を併用して使います。
 - [PiZero サンプルコードはアナログボリュームの物と同じです](https://tutorial.chirimen.org/pizero/esm-examples/ads1x15/main.js)
@@ -123,13 +123,13 @@
 ---
 
 # アクチュエーター（サーボモーター）の使い方
-<img src="./imgs/pwm_sg90.png" width=700>
+<img src="./imgs/pwm_sg90.jpg" width=700>
 
 - モーターを使用する場合はモータードライバーを経由して制御します。
 - モーターを動かすため外部から電力を取る必要があります。
 
 ### 回路図とプログラムサンプル
-<img src="./imgs/pca9685_sg90.png" width=700>
+<img src="./imgs/pca9685_sg90.jpg" width=700>
 
 - [PiZero サンプルコード](https://tutorial.chirimen.org/pizero/esm-examples/pca9685/main.js)
 - 給電方法は電池ボックス又は USB DIP 化キットを使ったモバイルバッテリーの使用、電源モジュールを使った ACアダプタ給電など
@@ -137,7 +137,7 @@
 
 ## PiZero から給電する回路図
 
-<img src="./imgs/pca9685_sg90_nodc.png" width=600>
+<img src="./imgs/pca9685_sg90_nodc.jpg" width=600>
 
 - 低消費電力のモーター（例：SG-90）1個の場合、RasPi Zero からの電力供給でも動作させられるものもあります。
 
@@ -152,14 +152,14 @@
 ---
 
 # アクチュエーター（DCモーター）の使い方
-<img src="./imgs/dcmotor.png" width=600>
+<img src="./imgs/dcmotor.jpg" width=600>
 
 - モーターを使用する場合はモータードライバーを経由して制御します。
 - モーターを動かすため外部から電力を取る必要があります。
 
 ### 回路図とプログラムサンプル
 ## hbridge1 の回路図（MX1508利用）
-<img src="./imgs/MX1508_DCmotor.png" width=700>
+<img src="./imgs/MX1508_DCmotor.jpg" width=700>
 
 - [PiZero サンプルコード](https://tutorial.chirimen.org/pizero/esm-examples/hbridge1/main.js)
 - L298N と同様に動作する MX1508 で接続した回路図を掲載します。
@@ -167,7 +167,7 @@
 <div style="page-break-before:always"></div>
 
 ## hbridge2-pca9685pwm の回路図（MX1508利用）
-<img src="./imgs/MX1508_PWM_DCmotor.png" width=700>
+<img src="./imgs/MX1508_PWM_DCmotor.jpg" width=700>
 
 - [PiZero サンプルコード](https://tutorial.chirimen.org/pizero/esm-examples/hbridge2-pca9685pwm/main.js)
 - PWMサーボドライバーと組み合わせた動作の場合は、PWM駆動が可能になります。
