@@ -11,3 +11,5 @@ $ vcgencmd get_camera
 supported=1 detected=1, libcamera interfaces=0
 ```
 - detected=1 と表示されていたら正しく接続が出来ています。
+
+[応用センサー一覧に戻る](ad_sensor.md)
