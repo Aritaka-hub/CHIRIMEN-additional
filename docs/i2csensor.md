@@ -18,10 +18,10 @@
   -  [※コードを確認する](https://tutorial.chirimen.org/pizero/esm-examples/bh1750/main.js) 
 - 温湿度・気圧センサー ＞ **ID：bme280　タイトル：温度・湿度・気圧**
   -  [※コードを確認する](https://tutorial.chirimen.org/pizero/esm-examples/bme280/main.js) 
+- 非接触赤外線温度センサー ＞ **ID：mlx90614 タイトル：赤外線温度センサ**
+  -  [※コードを確認する](https://tutorial.chirimen.org/pizero/esm-examples/mlx90614/main.js) 
 - サーモグラフィー ＞ **ID：amg8833　タイトル：サーモグラフィー**
   -  [※コードを確認する](https://tutorial.chirimen.org/pizero/esm-examples/amg8833/main.js) 
-- レーザー距離センサー ＞ **ID：vl53l0x**
-  -  [※コードを確認する](https://tutorial.chirimen.org/pizero/esm-examples/vl53l0x/main.js) 
 - 回路図と実物のセンサーは製品によって形状が異なる場合があります。実際の応用センサーキットに入っている距離センサーは写真の物となります。
   - 写真のレーザーセンサーを基板の表記に合わせた接続例です。回路図と同じ色のジャンパーワイヤーで接続します。 
 - I2C センサーは例の図の基盤に書かれた 4つのピン（**VIN / GND / SCL / SDA**）を接続するのが基本となります。
