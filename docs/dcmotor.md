@@ -12,7 +12,7 @@
 
 - このサンプルは GPIO Examples のサンプルです。
 
-動作を確認するためのサンプルコードは `CHIRIMENパネル` から入手できます。
+動作を確認するためのサンプルコードは `CHIRIMENパネル` から入手できます。<br>
 ブラウザでサンプルコードの中を確認したい場合は `コードを確認する` から確認出来ます。
 - アクチュエーター（DCモーター） ＞ **ID：hbridge1　タイトル：モータ正転・逆転制御**
   -  [※コードを確認する](https://tutorial.chirimen.org/pizero/esm-examples/hbridge1/main.js)
