@@ -4,7 +4,8 @@
 <img src="./imgs/AppliedSensorKits.jpg" width=800>
 
 ## 目次
-- [単体で動作確認できるセンサー](i2csensor.md)
+- [単体で動作確認できるセンサーの使い方](i2csensor.md)
+  - 距離センサー／照度センサー／温湿度・気圧センサー／非接触赤外線温度センサー／サーモグラフィー
 - [人感センサーの使い方](pirsensor.md)
 - [Neopixcel LED の使い方](neopixcel.md)
 - [アナログセンサーの使い方](analogsensor.md)
