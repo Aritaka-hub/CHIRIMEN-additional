@@ -1,5 +1,5 @@
 # アクチュエーター（DCモーター）の使い方（PWM駆動）
-<img src="./imgs/dcmotor.jpg" width=600>
+<img src="./imgs/dcmotor2.jpg" width=600>
 
 - モーターを使用する場合はモータードライバーを経由して制御します。
 - モーターを動かすため外部から電力を取る必要があります。
@@ -7,6 +7,7 @@
 ### 回路図とプログラムサンプル
 ## hbridge2-pca9685pwm の回路図（MX1508利用）
 <img src="./imgs/MX1508_PWM_DCmotor.jpg" width=700>
+
 - このサンプルは I2C Examples になります。
 
 動作を確認するためのサンプルコードは `CHIRIMENパネル` から入手できます。<br>
@@ -14,8 +15,8 @@
 - 人感センサー ＞ **ID：hbridge2-pca9685pwm　タイトル：モータ正転・逆転・速度制御**
   -  [※コードを確認する](https://tutorial.chirimen.org/pizero/esm-examples/gpio-onchange/main.js)
 - PWMサーボドライバーと組み合わせた動作の場合は、PWM駆動が可能になります。
-- モーターの回転速度も PWM で制御できるので加速や減速などを行う事も可能です。
-- 電池は USB DIP を使用してモバイルバッテリーに変える事も可能です。
+  - モーターの回転速度も PWM で制御できるので加速や減速などを行う事も可能です。
+  - 電池は USB DIP を使用してモバイルバッテリーに変える事も可能です。
 
 ## モバイルバッテリーの利用方法
 
