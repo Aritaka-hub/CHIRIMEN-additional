@@ -9,10 +9,12 @@
 
 <img src="./imgs/NeopixcelLED.jpg" width=800>
 
-動作を確認するためのサンプルコードは `CHIRIMENパネル` から入手できます。
+動作を確認するためのサンプルコードは `CHIRIMENパネル` から入手できます。<br>
 ブラウザでサンプルコードの中を確認したい場合は `コードを確認する` から確認出来ます。
 - NEOPIXEL LED（8連LED／16連LED） ＞ **ID：neopixel-i2c　タイトル：NEOPIXEL LED**
   -  [※コードを確認する](https://tutorial.chirimen.org/pizero/esm-examples/neopixel-i2c/main.js) 
+
+【備考】
 - 専用コントローラーボード Neopixcel I2C Driver を使った接続をすると簡単に使う事が出来ます。
   - Neopixcel I2C Driver は[オープンソースハードで、市販品ではありません。](https://github.com/chirimen-oh/accessories/blob/master/others/neopixel_i2c_TH/)
 - センサーを使う時には図のように赤色のドライバボードと NeoPixel LED をペアで利用して試してください。
