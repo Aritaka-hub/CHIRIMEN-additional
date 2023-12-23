@@ -16,9 +16,9 @@
 ブラウザでサンプルコードの中を確認したい場合は `コードを確認する` から確認出来ます。
 - 人感センサー ＞ **ID：gpio-onchange　タイトル：スイッチ**
   -  [※コードを確認する](https://tutorial.chirimen.org/pizero/esm-examples/gpio-onchange/main.js)
--  人感センサー ＞ **ID：gpio-polling　タイトル：スイッチ2**
-  -  [※コードを確認する](https://tutorial.chirimen.org/pizero/esm-examples/gpio-polling/main.js) 
-- [参考情報 ※CHIRIMEN Pi4 版](https://chirimen.org/chirimen/gc/top/examples/#GPIO-pirSensor)
+- 人感センサー ＞ **ID：gpio-polling　タイトル：スイッチ2**
+  -  [※コードを確認する](https://tutorial.chirimen.org/pizero/esm-examples/gpio-polling/main.js)
+-  [参考情報 ※CHIRIMEN Pi4 版](https://chirimen.org/chirimen/gc/top/examples/#GPIO-pirSensor)
   - サンプルコードは「スイッチ」のソースコードと共通で利用する事が出来ます。人感センサー（pir sensor）の名前でサンプル一覧には掲載されていないので注意してください。
   - 「スイッチ2」のソースコードでも動作させることが可能で、こちらは逐一センサーの状況が分かるので、調整をする際にはこちらのサンプルを利用すると便利です。
 
