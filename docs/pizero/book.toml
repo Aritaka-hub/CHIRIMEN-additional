@@ -1,0 +1,6 @@
+[book]
+authors = ["Aritaka Shinoda"]
+language = "en"
+multilingual = false
+src = "src"
+title = "CHIRIMEN PiZero Tutorial"
